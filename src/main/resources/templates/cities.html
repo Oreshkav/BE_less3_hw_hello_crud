@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>List of cities </title>
+</head>
+<body>
+<h2>Cities</h2>
+<p><a href="/">Back</a></p>
+<table border="1">
+    <tr>
+        <th>City</th>
+    </tr>
+    <tr th:each="event : ${events}">
+        <td th:utext="${event.city}">...</td>
+    </tr>
+</table>
+</body>
+</html>
